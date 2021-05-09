@@ -9,6 +9,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.typekit.net/cmm1wlf.css">
+<link rel="stylesheet" href="https://use.typekit.net/qar4lrs.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,12 +20,40 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      
+            <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <img src="images/header-image.jpg" class="img-responsive">
+      <header class="container-fluid header-image">
+          <div class="container">
+          <div class="row">
+              <div class="col-xs-6">
+                  <a href="index.html" class="img-responsive fac-logo"> 
+        <img src="images/FAC%20logo.png" Alt="Fremantle Art's Centre Logo" width="350" class="img-responsive">        
+        </a>
+              </div>
+  <div class="col-xs-2">
+              </div>
+              
+<div class="col-xs-4">
+    <form class="search-bar-header">
+      <input class="search-bar-input" type="text" name="search">
+      <button class="search-bar-button" type="submit"><i class="fa fa-search"></i></button>
+        
+    </form>
+              </div>
+              <div class="col-xs-6"></div>
+              <div class="col-xs-2"></div>
+              <div class="col-xs-4">
+                  <a class="login">LOGIN</a> <p class="line"> | </p> <a class="sign-up"> SIGN UP</a>
+              </div>
+          </div>
+              </div>
+    </header>
        
-    <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
+      <section class="container-fluid hero-image">     
+     <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -31,50 +63,148 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li> 
-        <li><a href="#">NEWS</a></li> 
-        <li><a href="#">WHATS ON</a></li> 
-        <li><a href="#">GALLERY</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li class="active">
+        <li class="nav-list"><a href="index.html">HOME</a></li>
+        <li class="nav-list"><a href="#">ABOUT</a></li> 
+        <li class="nav-list"><a href="news.html">NEWS</a></li> 
+        <li class="nav-list dropdown">
+           <button class="dropdown-toggle" data-toggle="dropdown" disabled> WHATS ON
+              </button>
+          <ul class="dropdown-menu">
+              <li class="dropdown-list"> <a href="events.html">EVENTS</a></li>
+              <li class="dropdown-list"> <a href="">MARKETS</a></li>
+          </ul>
+              </li>
+        <li class="nav-list"><a href="#">GALLERY</a></li>
+        <li> <form class="search-in-nav">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+            </li>
       </ul>
     </div>
   </div>
 </nav>
-      
-<section class="container">
-      <p>Featured news and events</p>
-    <div class="row">
-        
-    <div class="col-md-4">
-    <p>Spacey Jane Tour Announcement</p>
-        <p>Local Perth band Spacey Jane are touring their debut album ‘Sunlight’…</p>
-        <a>READ MORE</a>
-    </div>
-        
-            <div class="col-md-4">
-    <p>Sunday Sessions: Artists Needed</p>
-        <p>We are looking for local artists to perform at out Sunday sessions at the…</p>
-        <a>READ MORE</a>
-    </div>
-        
-            <div class="col-md-4">
-    <p>New talent Alert: The Frauds</p>
-        <p>The Frauds are a local rock/pop band based in Perth and have just released…</p>
-        <a>READ MORE</a>
-    </div>
+          <div class="container ">
+              <div class="tag-grid">
+          <img class="yellow-circle img-responsive" src="images/yellow-circle.png" width="750px">
     
-    
-    </div>
-         
-    
-      
-      
+               <h1 class="tag text-center">HOME OF FREMANTLE'S BEST MUSIC EVENTS </h1>
+              
+                <a class="btn btn-default btn-lg explore-music-events-button">EXPLORE MUSIC EVENTS</a>
+
+              
+              </div>
+          
+            </div>
+
       </section>
+      
+<section class="container-fluid articles-background-homepage">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                  <h1 class="featured-news-and-events-title">FEATURED NEWS AND EVENTS</h1>
+            </div>
+            
+             <div class="col-sm-4">
+            
+        <a href="" class="see-all-button">SEE ALL <i class="fas fa-angle-right"></i> </a>
+                 
+        </div>
+        </div>
+    <div class="row">
+    <div class="col-sm-4">
+       <img src="images/article-image-one.jpg" class="img-responsive article-images">
+       <p class="Article-titles-button">Spacey Jane Tour Announcement! </p>
+        <p class="article-body">Local Perth band Spacey Jane are touring their debut album ‘Sunlight’on a national wide tour! </p>
+        <a class="read-more-button">READ MORE <i class="fas fa-angle-right"></i> </a>
+            </div>
+        
+        <div class="col-sm-4">
+          <img src="images/article-image-two.jpg" class="img-responsive article-images">
+          <p class="Article-titles-button">Sunday Sessions: Artists needed! </p>
+             <p class="article-body">We are looking for local artists to perform at out Sunday sessions on the Front Garden. </p>
+        <a class="read-more-button">READ MORE <i class="fas fa-angle-right"></i> </a>
+         </div>
+        
+        <div class="col-sm-4">
+ <img src="images/article-image-three.jpg" class="img-responsive article-images">
+         <p class="Article-titles-button">Local Talent Alert: Death By Denim</p>
+            <p class="article-body">The Death by Denim are a local rock/pop band based in Perth and have just released a new single. <br></p>
+        <a class="read-more-button">READ MORE <i class="fas fa-angle-right"></i> </a>
+        </div>
+        </div>
+    </div>  
+      </section>
+      
+      <section class="container-fluid markets-background">
+          <div class="container markets-black-background">
+              <div class="markets-grid">
+
+                      <img src="images/markets-image.png" width="600px" class="markets-image img-responsive">
+    
+                           <img src="images/markets-title-image.jpg"  width="700px" class="markets-title-image img-responsive">
+                        <h1 class="index-titles markets-title"> MARKETS</h1>
+                           <p class="market-body"> We have a range of food and craft markets that run alongside our music events. Find out what activities you, your friends and family can do while attending these events.</p>
+                   </div>
+                           <a class="btn btn-default btn-lg markets-button">EXPLORE</a>
+             </div>
+                        </section>
+      
+       <section class="container-fluid about-section">
+          <div class="container">
+              <div class="row">
+                  
+                  <div class="col-sm-5">
+                      <div class="about-grid">
+                      <img src="images/about-rectangle.jpg" width=400px class="about-rectangle">
+                      <h1 class="index-titles about-title"> ABOUT</h1>
+                             </div>
+                      <div class="about-body-grid">
+                           <p class="about-body"> Used as an convict establishment, asylum and museum, the historic Fremantle Arts centre is now a music venue, hosting live acts from local, national and international artists. </p>
+                       </div>
+                           <a class="btn btn-default btn-lg about-button"> FIND OUT MORE</a>
+                  
+                    </div>
+                  
+                       <div class="col-sm-7">
+                           <img src="images/about-image.jpg" width="650px" class="img-responsive about-image">
+                  </div>
+              </div>
+           </div>
+      </section>
+      
+      <footer class="container-fluid footer">
+          <div class="container">
+              <div class="row">
+              <div class="col-sm-6">
+                  <p class="footer-heading"> CONTACT US </p>
+                  <p class="footer-body">+61 8 9432 9555</p>
+                  <p class="footer-body"> artscentre@fremantle.wa.gov.au</p>
+                  <p class="copyright footer-body">Copyright © 2021 All rights reserved.</p>
+                  </div>
+                  
+                    <div class="col-sm-2">
+                        <p class="footer-heading"> LOCATION</p>
+                        <p class="footer-body">1 Finnerty Street Fremantle Western Australia</p>
+                  </div>
+                  
+                    <div class="col-sm-2">
+                          <p class="footer-heading"> OPENING TIMES</p>
+                        <p class="footer-body">7 days 10am — 5pm Free admission</p>
+                  </div>
+                  
+                    <div class="col-sm-2">
+                        <p class="footer-heading">STAY UPDATED</p>
+                       <a class="footer-body social-media"> <i class="fab fa-instagram"></i> <span class="social-media-labels"> Instagram </span> </a>
+                        <a class="footer-body social-media"> <i class="fab fa-facebook-square"></i> <span class="social-media-labels"> Facebook</span></a>
+                        <a class="footer-body social-media"> <i class="fab fa-twitter"></i> <span class="social-media-labels"> Twitter </span> </a> 
+                  </div>
+              </div>
+          </div>
+      </footer>
+                  
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
