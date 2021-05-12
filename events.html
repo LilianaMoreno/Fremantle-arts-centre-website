@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.typekit.net/cmm1wlf.css">
 <link rel="stylesheet" href="https://use.typekit.net/qar4lrs.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,22 +24,69 @@
             <link rel="stylesheet" href="style.css">
   </head>
   <body>
+      
+      
+<!--      HEADER-->
       <header class="container-fluid header-image">
+          <div class="container">
           <div class="row">
               <div class="col-xs-6">
                   <a href="index.html" class="img-responsive fac-logo"> 
         <img src="images/FAC%20logo.png" Alt="Fremantle Art's Centre Logo" width="350" class="img-responsive">        
         </a>
               </div>
-  <div class="col-sm-3">
+  <div class="col-xs-2">
               </div>
-              
-<div class="col-sm-3">
+<div class="col-xs-4">
+    <form class="search-bar-header">
+      <input class="search-bar-input" type="text" name="search">
+      <button class="search-bar-button" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+           </div>
+              <div class="col-xs-6"></div>
+              <div class="col-xs-2"></div>
+              <div class="col-xs-4">
+                  <a class="login">LOGIN</a> <p class="line"> | </p> <a class="sign-up"> SIGN UP</a>
               </div>
+               </div>
+       <div class="collapsed-navbar">
+    <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav collapsed-navbar-size">
+        <li class="active">
+        <li class="nav-list"><a href="index.html">HOME</a></li>
+        <li class="nav-list"><a href="#">ABOUT</a></li> 
+        <li class="nav-list"><a href="news.html">NEWS</a></li> 
+        <li class="nav-list dropdown">
+           <button class="dropdown-toggle dropdown-menu-collapsed" data-toggle="dropdown" disabled> WHATS ON
+              </button>
+          <ul class="dropdown-menu">
+              <li class="dropdown-list"> <a href="events.html">EVENTS</a></li>
+              <li class="dropdown-list"> <a href="">MARKETS</a></li>
+          </ul>
+              </li>
+        <li class="nav-list"><a href="#">GALLERY</a></li>
+           <li class="nav-list"><a href="#">LOGIN/SIGNUP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
           </div>
+              </div>
     </header>
        
-      <section class="container-fluid events-header">     
+      
+<!--      SECTION 1-->
+      <section class="container-fluid events-header"> 
+          <div class="main-nav">
      <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
     <div class="navbar-header">
@@ -66,25 +115,74 @@
     </div>
   </div>
 </nav>
+          </div>
           <h1 class="whats-on-events"> WHATS ON - EVENTS</h1>
             </section>
       
+      
+<!--SECTION 2-->
               <section class="container-fluid events-image">
                   <div class="container">
                   <div class="row">
                       <div class="col-sm-3">
                       </div>
-                      
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 filters-grid">
                         <p class="filters-caption"> FIND YOUR PERFECT MUSIC EVENT</p>
                  <img src="images/yellow-rectangle.png" class="yellow-rectangle img-responsive">
+                        <p class="filters-title">Filters</p>
+                        <p class="date-filter">Date</p>
+                        <form class="date-form">
+<label for="dates"></label>
+<select class="date-form-styling" name="dates" id="dates">
+    <option value="date-one">All</option>
+<option value="date-two">Today</option>
+<option value="date-three">Tomorrow</option>
+<option value="date-four">This Week</option>
+<option value="date-five">Next Week</option>
+<option value="date-six">This Month</option>
+<option value="date-seven">Next Month</option>
+    </select>
+                            </form>
+                            <p class="price-filter">Price</p>
+                        <form class="price-form">
+<label for="genre"></label>
+<select class="price-form-styling" name="genre" id="genre">
+    <option value="genre-one">All</option>
+<option value="genre-two">Indie</option>
+<option value="genre-three">Pop</option>
+    <option value="genre-four">Rock</option>
+    </select>
+                            </form>
+<!--
+                                                <form class="price-form">
+<label for=“price”></label>
+<select class="price-form-styling" name=“price” id=“price”>
+    <option value=“price-one”>All</option>
+<option value=“price-two”>Free</option>
+<option value=“price-three”>Paid</option>
+    </select>
+
+                            </form>-->
+                        <p class="genre-filter">Genre</p>
+                                                <form class="genre-form">
+<label for=“genre”></label>
+<select class="genre-form-styling" name=“genre” id=“genre”>
+    <option value="genre-one">All</option>
+<option value="genre-two">Indie</option>
+<option value="genre-three">Pop</option>
+    <option value="genre-four">Rock</option>
+    </select>
+                            </form>
+                        <a class="btn btn-default btn-lg filters-button" href=""> LETS GO!</a>
+
                       </div>
-                      
                       <div class="col-sm-3"></div>
                   </div>
                   </div>
               </section>
-          
+      
+      
+<!--      SECTION 3-->
       <section class="container-fluid events-background-image">
           <div class="container">
               <div class="events-title-grid">
@@ -97,120 +195,104 @@
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> Stella Donnelly</h2>
                   <p class="event-details"> FRI 13TH APRIL 2021 | South Lawn <br> 7:00pm - 10:00pm</p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <img src="images/arrow.png" width="10px" class="arrow"> </a>
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
                   
-                  <a class="read-more-button buy-tickets-button">BUY TICKETS <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
+                  <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
          </div>
-               
               <div class="col-md-4 col-sm-6 events">
                                  <img src="images/event-two-image.jpg" class="img-responsive ocean-alley-image">
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> Spacey Jane</h2>
                   <p class="event-details"> SAT 25TH APRIL 2021 | South Lawn <br> 7:00pm - 10:30pm</p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
-                  <a class="read-more-button buy-tickets-button">BUY TICKETS <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
+                  <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
               </div>
-              
               <div class="col-md-4 col-sm-6 events">
                           <img src="images/event-three-image.jpg" class="img-responsive ocean-alley-image">
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> Ocean Alley</h2>
                   <p class="event-details"> FRI 29TH MAY 2021 | South Lawn <br> 7:30pm - 11:00pm</p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
-                  <a class="read-more-button buy-tickets-button">BUY TICKETS <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
+                  <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
               </div>
-
               <div class="col-md-4 col-sm-6 events">
                                                 <img src="images/event-four-image.jpg" class="img-responsive ocean-alley-image">
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> Helen Shanahan </h2>
                   <p class="event-details"> SAT 25TH JUNE 2021 | Front Garden <br> 5:00pm - 7:00pm </p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
-                  <a class="read-more-button buy-tickets-button">BUY TICKETS <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
+                  <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
          </div>
-               
               <div class="col-md-4 col-sm-6 events">
                                  <img src="images/event-five-image.jpg" class="img-responsive ocean-alley-image">
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> San Cisco Charity Event</h2>
                   <p class="event-details"> FRI 1ST JULY 2021 | South Lawn <br> 6:00pm - 10:00pm</p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
-                  <a class="read-more-button buy-tickets-button">BUY TICKETS <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
+                  <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
               </div>
-              
               <div class="col-md-4 col-sm-6 events">
                           <img src="images/event-six-image.jpg" class="img-responsive ocean-alley-image">
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> Good Dogs</h2>
                   <p class="event-details"> SUN 8TH JULY 2021 | Front Garden <br> 4:30pm - 7:00pm </p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
-                  <a class="read-more-button buy-tickets-button">BUY TICKETS <img src="images/arrow.png" width="10px" class="arrow"> </a>
-                  
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
+                  <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
               </div>
                        </div>
               <div class="text-center">
-                  <a class="read-more-button page-numbers"> <img src="images/backwards-arrow.png" width="10px" class="arrow"> Previous</a>
+                  <a class="read-more-button page-numbers"> <i class="fas fa-angle-left"></i> Previous</a>
                   <a class="read-more-button page-numbers"> 1</a>
                   <a class="read-more-button page-numbers"> 2</a>
                   <a class="read-more-button page-numbers"> 3</a>
-                  <a class="read-more-button page-numbers"> Next <img src="images/arrow.png" width="10px" class="arrow"> </a>
-              
+                  <a class="read-more-button page-numbers"> Next <i class="fas fa-angle-right arrow"></i> </a>
               </div>
-              <div>
+              <div class="email-signup-grid">
               <img src="images/email-rectangle.jpg" class="img-responsive email-rectangle">
-                  <p>Want to hear about the latest music events first? Enter your email to receive our newsletter!</p>
-                
-                  
-                  <a class="btn btn-default btn-lg"> SUBMIT</a>
-                  
+                  <p class="email-signup-text">Want to hear about the latest music events first? <br> Enter your email to receive our newsletter!</p>
+                   <form class="email-signup-form">
+      <input class="email-input" placeholder="Type your email..." type="text" name="email">
+        </form>
+                  <a class="btn btn-default btn-lg email-button-submit"> SUBMIT</a>
               </div>
-              
               </div>    
       </section>
       
           
-        
+<!--        FOOTER-->
       <footer class="container-fluid footer">
           <div class="container">
               <div class="row">
-              <div class="col-sm-6">
+              <div class="col-sm-5">
                   <p class="footer-heading"> CONTACT US </p>
                   <p class="footer-body">+61 8 9432 9555</p>
                   <p class="footer-body"> artscentre@fremantle.wa.gov.au</p>
                   <p class="copyright footer-body">Copyright © 2021 All rights reserved.</p>
                   </div>
-                  
                     <div class="col-sm-2">
                         <p class="footer-heading"> LOCATION</p>
                         <p class="footer-body">1 Finnerty Street Fremantle Western Australia</p>
                   </div>
-                  
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
                           <p class="footer-heading"> OPENING TIMES</p>
-                        <p class="footer-body">7 days 10am — 5pm Free admission</p>
+                        <p class="footer-body">7 days 10am — 5pm <br>Free admission</p>
                   </div>
-                  
                     <div class="col-sm-2">
-                                                <p class="footer-heading">STAY UPDATED</p>
-                       <a class="footer-body social-media"> <img src="images/instagram-icon.png" width=20px> <span class="social-media-labels"> Instagram </span> </a>
-                        <a class="footer-body social-media"> <img src="images/facebook-icon.png" width=12px> <span class="social-media-labels"> Facebook</span></a>
-                        <a class="footer-body social-media"> <img src="images/twitter-icon.png" width=20px> <span class="social-media-labels"> Twitter </span> </a> 
+                        <p class="footer-heading">STAY UPDATED</p>
+                       <a class="footer-body social-media"> <i class="fab fa-instagram"></i> <span class="social-media-labels"> Instagram </span> </a>
+                        <a class="footer-body social-media"> <i class="fab fa-facebook-square"></i> <span class="social-media-labels"> Facebook</span></a>
+                        <a class="footer-body social-media"> <i class="fab fa-twitter"></i> <span class="social-media-labels"> Twitter </span> </a> 
+                        <div class="social-media-mobile-grid social-media-mobile">
+                         <i class="fab fa-instagram instagram-mobile "></i> 
+                        <i class="fab fa-facebook-square facebook-mobile"></i>
+                            <i class="fab fa-twitter twitter-mobile"></i>
+                            </div>
                   </div>
               </div>
           </div>
