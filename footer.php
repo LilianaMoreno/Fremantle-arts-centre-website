@@ -3,18 +3,13 @@
           <div class="container">
               <div class="row">
               <div class="col-sm-5">
-                  <p class="footer-heading"> CONTACT US </p>
-                  <p class="footer-body">+61 8 9432 9555</p>
-                  <p class="footer-body"> artscentre@fremantle.wa.gov.au</p>
-                  <p class="copyright footer-body">Copyright © 2021 All rights reserved.</p>
+<p><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('contact_details') ) : endif; ?></p>
                   </div>
                     <div class="col-sm-2">
-                        <p class="footer-heading"> LOCATION</p>
-                        <p class="footer-body">1 Finnerty Street Fremantle Western Australia</p>
+<p><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('location_details') ) : endif; ?></p>
                   </div>
                     <div class="col-sm-3">
-                          <p class="footer-heading"> OPENING TIMES</p>
-                        <p class="footer-body">7 days 10am — 5pm <br>Free admission</p>
+<p><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('opening_times') ) : endif; ?></p>
                   </div>
                     <div class="col-sm-2">
                         <p class="footer-heading">STAY UPDATED</p>
