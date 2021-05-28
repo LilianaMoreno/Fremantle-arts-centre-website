@@ -1,0 +1,1081 @@
+/*   
+Theme Name: Fremantle Arts Centre
+Theme URI: http://Fremantleartscentre.com
+Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Author: Me
+Author URI: http://joshwhitkin.com
+Version: 1
+*/ 
+
+
+.btn-default:hover { background-color: #1F7472;
+border-color: #1F7472;
+color:white;}
+
+a:focus, a:hover { color:#1F7472;
+text-decoration:none;}
+
+body {font-size:16px;
+font-family: century-gothic, sans-serif;
+font-style: normal;
+font-weight: 400;}
+
+.btn {background-color:#52C6D8;
+color:white;
+font-family: century-gothic, sans-serif;
+border:none;
+text-align: center;
+    border-radius: 40px;
+color:white;
+font-weight:bold;}
+
+/*HEADER/NAVIGATION*/
+.collapsed-navbar {display:none;}
+
+.search-bar-header {padding-top:24px;
+float:right;}
+
+.search-bar-input {border-radius: 8px;
+    border:none;
+    padding-bottom:5px;}
+
+.search-bar-button {margin-left:-10px;
+border:none;
+    padding-right:10px;
+    padding-bottom:5px;
+border-bottom-right-radius: 8px;
+border-top-right-radius: 8px;
+background-color:#5DCDDE;
+color:white;}
+
+.search-bar-button:hover {background-color:#1F7472;}
+
+input.search-bar-input:focus-visible {outline:none;}
+
+.login {float:right;
+    margin-right:50px;
+    margin-left:5px;
+    margin-top: 5px;
+font-size:0.75em;
+color:white;
+font-weight:bold;
+padding-right:5px;}
+
+.sign-up {float:right;
+     margin-right:5px;
+font-size:0.75em;
+    color:white;
+font-weight:bold;
+  margin-top: 5px; }
+
+.line {display:inline;
+float:right;
+color:white;
+font-weight:bold;
+font-size:0.75em;
+  margin-top: 5px;}
+
+.header-image {background: url(images/header-image.jpg);
+background-size:cover;
+    background-repeat:no-repeat;
+padding-bottom:1%;}
+
+.fac-logo {padding-top:20px;}
+
+.navbar-inverse { background-color: #2220;
+    border-color: #08080800;}
+
+.navbar-inverse .navbar-nav>li>a {color:black;}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {background-color:white;
+color:black;}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {color:#52C6D8;}
+
+.nav {  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+padding-top:25px;}
+
+.nav-list {padding-left:10px;
+padding-right:10px;}
+
+ul.nav.navbar-nav {width:700px;
+padding-left:70px;}
+
+/*FOOTER*/
+.footer {background: url(images/footer-image.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+color:white;
+padding-top: 2%;
+padding-bottom: 2%;}
+
+.copyright {padding-top:2%;}
+
+.footer-heading {font-weight: bold;
+font-size: 1.125em;}
+
+.footer-body {font-size: 0.875em;}
+
+.social-media {display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);}
+
+.social-media-labels {grid-column: 3/ span 4 ;}
+
+.social-media-mobile {display:none;}
+
+/*INDEX PAGE
+SECTION 1 */
+.hero-image {background: url(images/hero-image.png);
+    background-size:cover;
+background-repeat:no-repeat;
+margin-bottom:-1%;}
+
+.explore-music-events-button { height:42px;
+padding-right:15px;
+    margin-top:15%;
+    grid-column: 4/ span 1;
+grid-row: 3/ span 3;}
+
+.yellow-circle { grid-column: 3/ span 5;
+grid-row: 1/ span 3;
+margin-top:3%;}
+
+.tag-grid {display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);}
+
+.tag {font-size:4em;
+    float:right;
+    font-family: brevia, sans-serif;
+font-weight: 800;
+text-align:center;
+    color:black;
+line-height:90%;
+grid-column: 3/ span 5;
+    padding-top:30%;
+    margin-left:10%;
+    margin-right:10%;
+grid-row: 1/ span 2;}
+
+
+/*SECTION 2 - NEWS ARTICLES*/
+.featured-news-and-events-title { font-size:2.5em;
+    font-family: brevia, sans-serif;
+font-weight: 800;
+    color:#EA5074;
+    padding-top:2%;
+    padding-bottom:5%}
+
+.see-all-button {float:right;
+font-family: century-gothic, sans-serif;
+    font-weight:bold;
+        padding-top:15%;
+    padding-bottom:2%;
+    color:#5DCDDE; }
+
+.Article-titles { font-size:1.5em;
+    font-weight: bold;
+color:black;}
+
+.article-images {padding-bottom:3%;}
+
+.article-body { font-size:1.25em;
+    padding-top:5%;
+padding-bottom:7%;
+color:black;}
+
+.read-more-button {font-family: century-gothic, sans-serif;
+ font-weight:bold;
+color:#5DCDDE;}
+
+.articles-background-homepage {background: url(images/articles-background-homepage.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+padding-bottom:5%;
+padding-top:3%;}
+
+.see-all-button-mobile {display:none;}
+
+
+/*SECTION 3 - MARKETS*/
+.markets-title-image {padding-top:10%;
+margin-left:108.1%;
+    position:relative;
+z-index: 0;}
+
+.markets-title {margin-left:160%;
+    margin-top:-11%;
+    position:relative;
+z-index: 1;}
+
+.markets-image {margin-left:15%;
+margin-top:-10%;}
+
+.market-body {color:white;
+    margin-left:25%;
+    margin-right:5%;
+    margin-top:30%;
+    font-size:1.25em;
+text-align: right;}
+
+.markets-black-background-mobile {background: url(images/markets-black-background.jpg);
+background-size:cover;
+    background-repeat:no-repeat;
+padding-bottom:5%;}
+
+.markets-black-background {background: url(images/markets-black-background.jpg);
+background-size:cover;
+    background-repeat:no-repeat;
+padding-bottom:5%;}
+
+.markets-button {float:right;
+    margin-top:7%;
+margin-right:5%;
+padding-left:3%;
+padding-right:3%;}
+
+.markets-background {background: url(images/markets-background.jpg);
+background-size:cover;
+    background-repeat:no-repeat;
+padding-bottom:2%;}
+
+
+/*SECTION 4 - ABOUT*/
+.about-section {padding-top:1%;
+padding-bottom:5%;
+    background: url(images/about-background.jpg);
+background-size:cover;
+    background-repeat:no-repeat;}
+
+.about-image {padding-top:8%;}
+
+.about-rectangle {margin-left:-2.5%;}
+
+.about-title {padding-left:5%;
+margin-top:-10%;}
+
+.index-titles {color:white;
+     font-size:2.5em;
+    font-family: brevia, sans-serif;
+font-weight: 800;}
+
+.about-body { margin-top:10%;
+    padding-bottom:10%;
+    padding-right:30%;
+    margin-left:-2.5%;
+font-size:1.25em;
+color:black;}
+
+.about-button {padding-left:6%;
+padding-right:6%;
+margin-left:-2.5%;}
+
+
+/*EVENTS PAGE
+SECTION 1*/
+.events-header {background:url(images/events-header.png);
+background-size:cover;
+    background-repeat:no-repeat;
+padding-bottom:1%;}
+
+.whats-on-events {font-size:4em;
+    font-family: brevia, sans-serif;
+font-weight: 800;
+text-align:center;
+    color:white;
+    padding-top:3%;}
+
+.events-image {background:url(images/events-image.png);
+background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+padding-left:0px;
+padding-right:0px;
+margin-bottom:3%;}
+
+.events-grid {display:grid;
+     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);}
+
+.events-yellow-rectangle {grid-column: 2/ span 10;
+grid-row: 1/ span 1;
+padding-top:62%;}
+
+.filters-caption { font-family: brevia, sans-serif;
+font-weight: 800;
+text-align:center;
+    grid-column: 2/ span 10;
+grid-row: 1/ span 1;
+     color:white;
+    font-size: 2.5em;
+   margin-top:69%;
+    padding-bottom:10%;
+z-index: 1;}
+
+/*SECTION 2*/
+.music-events-title {font-family: brevia, sans-serif;
+font-weight: 800;
+color:white;
+font-size: 3.125em;
+grid-column: 1/ span 5;
+grid-row: 1/ span 1;
+padding-left:3%;}
+
+.events-title-grid {display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);}
+
+.music-events-rectangle {grid-column: 1/ span 5;
+grid-row: 1/ span 1;
+padding-bottom:7%;}
+
+.events-black-rectangle {background-color:black;
+padding-top:1%;
+padding-bottom:9%;
+border-bottom-right-radius:10px;
+border-bottom-left-radius:10px;}
+
+.artist-name {text-align:center;
+color: #EA5074;
+font-size: 1.25em;
+font-weight: bold;}
+
+.event-details {padding-top:2%;
+    padding-bottom:7%;
+    color:white;
+text-align:center;}
+
+.find-out-more-button {padding-left:10%;}
+
+.buy-tickets-button {float:right;
+padding-right:10%;}
+
+.ocean-alley-image {border-top-left-radius: 10px;
+border-top-right-radius: 10px;}
+
+.events {padding-bottom:5%;}
+
+.page-numbers {padding-left:2%;
+padding-right:2%;
+margin-right:2%;}
+
+.events-background-image {background:url(images/events-background-image.jpg);
+background-size:cover;
+    background-repeat:no-repeat;}
+
+.email-signup-text {
+    padding-top:3%;
+text-align:center;
+color:black;}
+
+.email-signup-form {
+padding-top:1%;
+     text-align:center;
+    margin-bottom:2%;}
+
+.email-input {border:0px;
+border-radius: 10px;
+padding-top:2%;
+padding-bottom:2%;
+padding-right:27%;
+    padding-left:5%;}
+
+.email-rectangle-mobile {background: url(images/email-rectangle-mobile.png);
+background-size:cover;
+    background-repeat:no-repeat;
+    margin-top:5%;
+        padding-bottom:2%;
+    margin-bottom:5%;}
+
+::placeholder {color:#9B9B9B;}
+
+input.email-input:focus-visible {outline:none;}
+
+.email-button-submit {
+height: 45px;
+    width:100px;
+   margin:auto;
+        display:flex;
+        justify-content: center;}
+
+.social-media-icons {color:white;}
+
+.news-page-background {background:url(images/news-page-background.png);
+background-size:cover;
+    background-repeat:no-repeat;
+background-position: center;}
+
+.news-image-one {padding-top:5%;
+grid-column: 1/ span 10;
+grid-row: 1/ span 4;}
+
+.news-grid {display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);}
+
+.yellow-rectangle-news-page {grid-column: 2/ span 5;
+grid-row: 3/ span 4;
+padding-top:20%;}
+
+.pink-rectanlge {grid-column: 1/ span 2;
+grid-row: 1/ span 1;
+padding-top:25%;}
+
+.latest-news {grid-column: 1/ span 2;
+grid-row: 1/ span 1;
+    padding-top:32.5%;
+padding-left:10%;
+font-size:1.5em;
+font-weight: bold;
+color:white;}
+
+.news-article-one-title{font-size:1.5em;
+font-weight:bold;
+    color:black;
+grid-column: 2/ span 5;
+grid-row: 3/ span 3;
+    padding-left:8%;
+padding-top:25%;}
+
+.news-article-one-date {grid-column: 2/ span 4;
+grid-row: 4/ span 3;
+padding-left:10%;
+padding-top:12%;
+font-size:0.9em;
+color:black;}
+
+.a-labels {display:none;}
+
+.news-article-one-description{grid-column: 2/ span 4;
+grid-row: 4/ span 3;
+padding-left:10%;
+color:black;
+padding-top:22%;}
+
+.news-article-one-button {grid-column: 2/ span 4;
+grid-row: 4/ span 3;
+padding-left:10%;
+padding-top:47%;}
+
+.black-rectangle-news{background: url(images/black-rectangle-news.jpg);
+background-size:cover;
+    background-repeat:no-repeat;
+    padding-bottom:1%;
+margin-bottom:2%;
+margin-top:3%;
+padding-top:2%;
+padding-bottom:2%;}
+
+.news-image-two {padding-top:5%;
+padding-left:10%;
+padding-bottom:5%;}
+
+.news-article-two-title{font-size:1.5em;
+font-weight:bold;
+color:#EA5074;
+padding-top:10%;
+margin-left:-20%;}
+
+.news-article-two-date {font-size:0.9em;
+color:white;
+padding-top:2%;
+padding-bottom:5%;
+padding-left:2%}
+
+.news-article-two-description {color:white;
+padding-left:2%;
+padding-right:10%;
+padding-bottom:10%;}
+
+.news-article-three-date {font-size:0.9em;
+color:black;
+padding-top:2%;
+padding-bottom:5%;
+padding-left:2%}
+
+.news-article-three-description {color:black;
+padding-left:2%;
+padding-right:10%;
+padding-bottom:10%;}
+
+.news-article-three-section {margin-bottom:2%;}
+
+a.footer-body.social-media {color:white;
+margin-bottom:5%;}
+
+a.footer-body.social-media:hover {color:#5DCDDE;}
+
+.news-article-two-button {
+padding-left:2%;}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1199px) {
+ .hero-image {margin-bottom:-6%;}
+    
+    .article-body { font-size:1em;}
+    
+    .markets-title-image {margin-left:109.8%;}
+     
+    .read-more-button {font-size:0.875em;}
+
+    .see-all-button {font-size:0.875em;}
+    
+    .market-body { font-size:1em;}
+    
+    p.about-body { font-size:1em;}
+    
+    .btn {font-size:0.75em;}
+    
+    .explore-music-events-button {height:35px;}
+    
+    li.nav-list {font-size: 0.875em;}
+    
+    ul.nav.navbar-nav {
+    margin-left:2%;}
+    
+    .footer-heading {font-size: 0.875em;}
+
+.footer-body {font-size: 0.75em;}
+
+.about-title {margin-top:-12%;}
+    
+    .news-article-one-button {padding-top:55%;}
+    
+    .email-button-submit {height: 35px;}
+    
+    .events-yellow-rectangle {padding-top:51%;}
+
+.filters-caption {
+   margin-top:57%;
+}
+
+
+@media only screen and (max-width: 991px) {
+    
+    .tag {font-size: 3em;
+     padding-top:23%;}
+    
+    ul.nav.navbar-nav {padding-top:1.5%;}
+    
+    .hero-image {margin-bottom:-5%;}
+    
+    .yellow-circle {margin-top:-2%;}
+    
+    .featured-news-and-events-title { font-size:1.5em;}
+    
+    .Article-titles { font-size:1.125em;}
+    
+    .index-titles {font-size: 1.5em;}
+    
+.article-body { font-size:0.875em;}
+    
+        .market-body { font-size:0.875em;}
+    
+    p.about-body { font-size:0.875em;
+    padding-right:5%;
+    padding-top:3%;
+    padding-bottom:5%}
+    
+    .read-more-button-spacing {padding-bottom:16%;}
+    
+      .markets-title-image {margin-left:113%;}
+    
+    .markets-title {margin-left:170%;}
+    
+    .about-title {margin-top:-12.5%;}
+    
+     .footer-heading {font-size: 0.75em;}
+    
+    .footer-body {font-size: 0.625em;}
+    
+    .whats-on-events {font-size: 3em;}
+    
+    .latest-news {font-size: 1em;}
+    
+    .news-article-one-title {font-size: 1.125em;}
+    
+    .news-article-one-date {font-size:0.6875em;
+    padding-top:12%;}
+    
+    .news-article-one-description {font-size: 0.875em;
+    grid-column: 2/ span 5;
+    padding-top:18%;
+    padding-left:9%;}
+    
+    .news-article-two-title {font-size: 1.125em;}
+    
+    .news-article-two-date {font-size:0.6875em;}
+    
+    .news-article-two-description {font-size: 0.875em;}
+    
+    .news-article-three-date {font-size:0.6875em;}
+    
+    .news-article-three-description {font-size: 0.875em;
+    padding-bottom:4%;}
+    
+    .news-article-three-section {margin-bottom:5%;}
+    
+    ::placeholder {font-size:0.875em;}
+
+    
+    .yellow-rectangle-news-page {grid-column: 2/ span 6;}
+    
+        .events-yellow-rectangle {padding-top:55%;}
+
+.filters-caption { font-size:1.5em;
+   margin-top:62%;
+}
+    }
+
+
+@media only screen and (max-width: 767px){
+    
+    
+    .footer-heading {margin-bottom:1px;}
+    
+    .search-bar-header {display:none;}
+    
+    .login {display:none;}
+    
+    .line {display:none;}
+    
+    .sign-up {display:none;}
+    
+    .markets-title-image {float:right;
+    margin-right:-4.3%;}
+    
+    .markets-title {float:right;
+    margin-top:-7%;}
+    
+    .collapsed-navbar {display:block;
+        margin-top:-50px;}
+
+    .main-nav {display:none;}
+    
+    .nav {position:static;}
+    
+     ul.nav.navbar-nav.collapsed-navbar-size {
+         padding-left:320px;
+         text-align: left;}
+        
+    .navbar-inverse .navbar-nav>li>a {color:white;}
+    
+    .tag {font-size: 2.5em;}
+    
+    .yellow-circle {margin-top:-5%;}
+    
+    .see-all-button {display:none;}
+    
+    .see-all-button-mobile {display:block;
+    float:inherit;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+    margin-top:5%;
+    width:70px;}
+    
+     .featured-news-and-events-title {
+         text-align: center;
+         padding-bottom:0px;}
+    
+    .article-images {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    padding-top:5%;}
+    
+    .Article-titles {text-align: center;}
+    
+    .article-body { text-align:center;
+    padding-left:20%;
+    padding-right:20%;
+    padding-top:0px;
+    padding-bottom:1%;}
+
+    .read-more-button-spacing {padding-bottom:1%;}
+    
+    .read-more-button {margin:auto;
+        display:flex;
+        justify-content: center;}
+    
+    .arrow {padding-left:5px;
+    padding-top:3px;}
+    
+    .markets-black-background-mobile {background: url(images/markets-black-background.jpg);
+background-size:cover;
+    background-repeat:no-repeat;
+padding-bottom:5%;
+display:block;
+    z-index:1}
+    
+    .markets-image {padding-top:5%;
+    margin-left:0%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;}
+    
+    .market-body {text-align:center;
+     margin-top:5%;
+    margin-left:20%;
+    margin-right:20%;
+    }
+    
+    .markets-button {float:none;
+  margin:auto;
+        margin-top:5%;
+        display:flex;
+        justify-content: center;
+    width:90px;}
+
+.about-section {padding-top:5%;}
+    
+.about-rectangle {margin-left:-15%;}
+
+.about-image {padding-top:8%;}
+
+.about-title {padding-left:0%;
+margin-top:-8%;}
+
+p.about-body { text-align: center;
+    margin-top:5%;
+    padding-right:0%;
+    margin-right:20%;
+    margin-left:20%;
+    padding-bottom:2%;
+    }
+
+.about-button {margin:auto;
+        margin-top:5%;
+        display:flex;
+        justify-content: center;
+    width:120px;
+    margin-left:auto;}
+    
+    .about-image {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    padding-top:5%;}
+    
+    .copyright {display: none;}
+    
+    .footer {text-align: center;
+    padding-bottom:4%;}
+
+.footer-heading {padding-top:3%;}
+
+    .social-media {display:none;}
+
+    .social-media-mobile {display:block;
+    justify-content: center;}
+    
+    .news-article-one-button {
+        grid-column: 1/ span 4;}
+    
+    .news-article-one-title {grid-column: 2 /span 6;
+    padding-top:20%;}
+    
+    .news-article-two-title {margin-left:0px;
+    padding-top:0px;
+    padding-left:15%;}
+    
+    .news-grid {margin-bottom:3%;}
+    
+    .news-image-two {padding-left:0px;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+        padding-bottom:0px;}
+    
+    .news-article-two-date { padding-left:15%;
+    padding-top:0px;
+    padding-bottom:0px;}
+    
+    .news-article-two-description { padding-left:15%;
+    padding-right:15%;
+    padding-bottom:0px;}
+    
+    .news-article-two-button {display:block;
+    padding-left:15%;
+    padding-bottom:3%;}
+    
+    .news-article-three-date {padding-left:15%;
+    padding-top:0px;
+    padding-bottom:0px;}
+    
+    .news-article-three-description {padding-left:15%;
+    padding-right:15%;
+    padding-bottom:0px;}
+    
+    .page-numbers {display:inline;}
+    
+    .email-signup-text {padding-left:0px;
+    text-align:center;
+    margin-top:5%;}
+    
+    .email-signup-form {padding-left:0px;
+    text-align:center;
+        margin-top:3%;}
+    
+    .email-button-submit {padding-right:20px;
+    margin-left:0px;
+    margin:auto;
+        display:flex;
+        justify-content: center;
+    width:80px;
+    margin-top:3%;} 
+    
+    .whats-on-events {font-size:2.5em;
+        padding-top:10%;
+        margin-top:0px;}
+    
+.filters-caption {font-size: 1.75em;}
+    
+    .event-details {padding-top:0px;
+    padding-bottom:3%;}
+    
+    .events-black-rectangle {padding-bottom:5%;}
+    
+    .find-out-more-button {display:block;
+flex:none;
+    padding-left:20%;}
+    
+    .buy-tickets-button {display:block;
+    flex:none;
+    padding-right:20%;
+    margin-top:-3%;}
+}
+
+
+@media only screen and (max-width: 680px) 
+{ .yellow-circle {margin-top:-13%;}
+    
+    .hero-image {margin-bottom:-4%;}
+    
+    .tag {font-size: 2em;
+        padding-top:10%;}
+    
+    .explore-music-events-button {height:30px;
+    margin-top:0px;}
+    
+        .markets-title-image {margin-right:-4.8%;}
+    
+    .markets-title { margin-top:-8%;}
+    
+    .whats-on-events {font-size:2em;
+        padding-top:15%;}
+    
+    .latest-news {font-size:0.6875em;}
+    
+    .yellow-rectangle-news-page {grid-column: 2/ span 6;
+        padding-top:10%; }
+    
+    .news-article-one-title {grid-column: 2/ span 7;
+        font-size:0.875em;
+        padding-top:8%;}
+   
+    .news-article-one-date {padding-top:3%;
+    padding-left:15%;}
+    
+    .news-article-one-description {grid-column: 2/ span 7;
+    font-size:0.6875em;
+    padding-top:9%;
+    padding-left:9%;
+    padding-right:15%;}
+    
+    .news-article-one-button {font-size:0.6875em;
+    margin-left:30%;
+    margin-top:-5%;}
+    
+    .news-article-two-title {font-size:0.875em;}
+    
+    .news-article-two-description {font-size:0.6875em;}
+    
+    .news-article-two-button {font-size:0.6875em;}
+    
+    .news-article-three-description {font-size:0.6875em;}
+    
+    .filters-caption {font-size: 1.5em}
+    
+      .buy-tickets-button {display:block;
+    flex:none;
+    padding-right:20%;
+    margin-top:-4%;}
+    }
+
+
+@media only screen and (max-width: 500px) {
+      .btn {font-size:0.5625em;}
+    
+    .header-image {padding-bottom:0px;}
+    
+    .yellow-circle {margin-top:-23%;}
+    
+    .hero-image {margin-bottom:-7%;}
+    
+    .tag {font-size: 1.5em;
+    padding-top:0px;}
+    
+    .explore-music-events-button {margin-top:-3px;}
+    
+    .markets-title-image {margin-right:-7%;}
+    
+    .markets-title { margin-top:-10%;
+    font-size:1.125em;}
+    
+    .about-title {margin-top:-11%;
+    font-size:1.125em;}
+        
+    ul.nav.navbar-nav.collapsed-navbar-size {width:300px;
+    padding-left:130px;}
+    
+    .collapsed-navbar {margin-top:-40px;}
+    
+      .featured-news-and-events-title { font-size:1.125em;}
+
+    .Article-titles {font-size:0.875em;}
+    
+    .article-body { font-size: 0.6875em;}
+    
+    .read-more-button {font-size:0.6875em;}
+    
+    .yellow-rectangle-news-page {grid-column: 1/ span 10;
+    grid-row: 3/ span 3;
+    padding-top:7%;}
+    
+    .news-article-one-title {grid-column: 2/ span 10;
+    padding-left:1%;
+   padding-top:5%;
+    font-size:0.875em;}
+    
+    .news-article-one-date {padding-top:0px;
+        grid-row: 4/ span 1;
+    padding-left:1%;
+       margin-top:-10%;
+    font-size:0.625em;}
+    
+    .news-article-one-description {grid-column: 2/ span 8;
+        padding-left:1%;
+    font-size:0.6875em;
+    padding-right:0px;
+    padding-top:5%;}
+        
+    .latest-news {font-size: 0.5625em;}
+    
+    .news-article-one-button {padding-left:0px;
+    margin-left:0%;
+    grid-column: 2/ span 5;
+        grid-row: 5/ span 1;
+    margin-top:0%;
+    padding-top:0%;}
+    
+    .news-article-two-title {font-size:0.875em;}
+    
+    .news-article-two-date {font-size:0.625em;}
+    
+    .news-article-two-description {font-size:0.6875em;}
+    
+    .news-article-three-date {font-size:0.625em;}
+    
+    .news-article-three-description {font-size:0.6875em;}
+    
+    .email-signup-text {font-size:0.75em;}
+    
+    ::placeholder {font-size:0.75em;}
+        
+    .whats-on-events {font-size:1.5em;}
+    
+    .filters-caption {font-size: 1em;}
+    
+      .buy-tickets-button {
+    margin-top:-5%;}
+    
+    .email-button-submit {font-size:0.75em;}
+}
+
+@media only screen and (max-width: 380px) {
+    
+    .yellow-circle {margin-top:-30%;}
+    
+        .collapsed-navbar {margin-top:-30px;}
+   
+    .hero-image {margin-bottom:-12%;}
+    
+    .arrow {padding-left:5px;
+    padding-top:1px;}
+    
+.tag {font-size: 1.125em;
+    margin-top:0px;}
+    
+        .explore-music-events-button {height:23px;
+    margin-top:25%;
+    padding-top:5px;
+            padding-left:5px;
+            padding-right:5px;
+    grid-row:2/ span 1;}
+    
+    .article-body { text-align:center;
+    padding-left:15%;
+        padding-right:15%;}
+        
+        .markets-title-image {margin-right:-9.3%;}
+    
+      .market-body {
+    margin-left:15%;
+    margin-right:15%;
+          font-size:0.6875em;}
+    
+    p.about-body {
+    margin-right:15%;
+    margin-left:15%;
+        font-size:0.6875em;}
+        
+    .whats-on-events {font-size:1em;}
+    
+    .latest-news {grid-column: 1/ span 3;
+    padding-top:23%;}
+    
+    .pink-rectanlge {grid-column: 1/ span 3;
+    padding-top:17%;}
+    
+    .news-article-one-title {grid-column: 1/ span 10;
+    padding-left:5%;
+    padding-top:2%;}
+    
+    .news-article-one-date {grid-column: 1/ span 10;
+    padding-left:5%;
+    margin-top:-2%}
+    
+    .news-article-one-description {grid-column: 1/ span 10;
+        padding-left:5%;
+    padding-top:7%;}
+    
+    .news-article-one-button {grid-column: 1/ span 4;
+    grid-row: 5/ span 3;
+    padding-top:25%;
+    padding-left:10%;}
+    
+    .news-article-two-title {padding-right:15%;
+    margin-top:3%;}
+    
+    .news-article-two-description {padding-right:15%;}
+    
+    .artist-name {font-size:1em;}
+    
+    .event-details {font-size:0.875em;}
+    
+          .buy-tickets-button {
+    padding-right:10%;
+    margin-top:-6%;}
+    
+    .find-out-more-button {padding-left:10%;}
+    
+    .email-signup-text {font-size:0.6875em;}
+}
+
