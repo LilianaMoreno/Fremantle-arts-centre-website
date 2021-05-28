@@ -7,8 +7,8 @@ Template Name: News
 
 <?php get_header(); /* Tells WordPress to include header.php */ ?>
     <!--      SECTION 1-->
-      <section class="container-fluid events-header"> 
-          <div class="main-nav">
+      <section class="container-fluid events-header"<?php if ( get_field(' newsheader ') ) { echo 'style="background: url(' . get_field(' eventsheader ') . ')"'; } ?>> 
+                 <div class="main-nav">
      <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
     <div class="navbar-header">
@@ -19,58 +19,54 @@ Template Name: News
       </button>
     </div>
     <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active">
-        <li class="nav-list"><a href="index.php">HOME</a></li>
-        <li class="nav-list"><a href="#">ABOUT</a></li> 
-        <li class="nav-list"><a href="news.php">NEWS</a></li> 
-        <li class="nav-list dropdown">
-           <button class="dropdown-toggle" data-toggle="dropdown" disabled> WHATS ON
-              </button>
-          <ul class="dropdown-menu">
-              <li class="dropdown-list"> <a href="events.php">EVENTS</a></li>
-              <li class="dropdown-list"> <a href="">MARKETS</a></li>
-          </ul>
-              </li>
-        <li class="nav-list"><a href="#">GALLERY</a></li>
+<ul class="nav navbar-nav">
+<?php wp_nav_menu(array(
+        'menu' => 'Main Nav',
+        'items_wrap'=>'%3$s',
+        'container' => false,
+        'list_item_class' => "nav-item",
+        'link_class' => "nav-link",
+        )); ?>
       </ul>
     </div>
   </div>
 </nav>
               </div>
               <div>
-                    <h1 class="whats-on-events"> NEWS</h1>
+                    <h1 class="whats-on-events animate__animated animate__fadeIn"><?php the_field('pagetitle'); ?></h1>
                   </div>
           
               </section>
       
-      <section class="news-page-background">
+      <section class="news-page-background"<?php if ( get_field(' newspagebackground ') ) { echo 'style="background: url(' . get_field(' newspagebackground ') . ')"'; } ?>>
       
 <!--      SECTION 2-->
       <div class="container-fluid ">
           <div class="container news-grid">
-          <img src="images/http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/news-image-one.jpg" class="img-responsive news-image-one" alt="Spacey Jane">
-        <img src="images/http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/pink-rectangle.png" class="img-responsive pink-rectanlge" alt="Latest news">
-              <p class="latest-news"> LATEST NEWS</p>
-              <img src="images/http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/yellow-rectangle.png" class="img-responsive yellow-rectangle-news-page" alt="news article">
-              <h2 class="news-article-one-title"> Spacey Jane Tour Announcement</h2>
-              <p class="news-article-one-date"> 15TH MARCH 2021</p>
-              <p class="news-article-one-description">Local Perth band Spacey Jane are touring their debut album ‘Sunlight’ on a national wide tour following the success of their single “Booster Seat”.</p>
-               <a class="read-more-button news-article-one-button">READ MORE <i class="fas fa-angle-right arrow"></i> </a>
+                      <img src="<?php the_field('pinkrectangle'); ?>" class="img-responsive pink-rectanlge">
+              <p class="latest-news"><?php the_field('latestnews'); ?></p>
+                 <img src="<?php the_field('yellowrectangle'); ?>" class="img-responsive yellow-rectangle-news-page">
+<?php $post_id =453;
+$queried_post = get_post($post_id);?>
+<?php echo get_the_post_thumbnail($queried_post, 'full', array('class' => 'news-image-one img-responsive')); ?>
+<h2 class="news-article-one-title wow animate__animated animate__fadeInLeft"><?php echo $queried_post->post_title; ?></h2>
+              <p><?php echo $queried_post->post_content; ?></p>
+<?php echo '<a class="read-more-button news-article-one-button" href="'.get_permalink($queried_post).'">READ MORE <i class="fas fa-angle-right arrow wow animate__animated animate__fadeInRight"></i> </a>';?>     
       </div>
       </div>
       
 <!--      SECTION 3-->
-      <div class="container black-rectangle-news">
+      <div class="container black-rectangle-news"<?php if ( get_field(' blackrectangle ') ) { echo 'style="background: url(' . get_field(' blackrectangle ') . ')"'; } ?>>
           <div class="row">
               <div class="col-sm-6">
-                    <img src="images/http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/news-image-two.png" class="img-responsive news-image-two" width="500" alt="artist at sunday session">
+<?php $post_id =455;
+$queried_post = get_post($post_id);?>
+<?php echo get_the_post_thumbnail($queried_post, 'full', array('class' => 'img-responsive news-image-two')); ?>
               </div>
-              <div class="col-sm-6">
-                        <h2 class="news-article-two-title"> Sunday Sessions: Artists needed!</h2>
-          <p class="news-article-two-date">11TH MARCH 2021</p>
-          <p class="news-article-two-description">We are looking for local artists to perform at our Sunday sessions on the Front Garden.</p>
-          <a class="read-more-button news-article-two-button">READ MORE <i class="fas fa-angle-right arrow"></i> </a>
+              <div class="col-sm-6">    
+<h2 class="news-article-two-title"><?php echo $queried_post->post_title; ?></h2>
+              <p><?php echo $queried_post->post_content; ?></p>
+<?php echo '<a class="read-more-button news-article-two-button" href="'.get_permalink($queried_post).'">READ MORE <i class="fas fa-angle-right arrow wow animate__animated animate__fadeInRight"></i> </a>';?>  
               </div>
               </div>
       </div>
@@ -81,49 +77,34 @@ Template Name: News
            <div class="container">
                <div class="row news-article-three-section">
                <div class="col-sm-6">
-                   <img src="images/http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/news-image-three.jpg" class="img-responsive news-image-two" width="500" alt="death by denim">
-               </div>
-             <div class="col-sm-6">
-                        <h2 class="news-article-two-title"> Local Talent Alert: Death By Denim</h2>
-          <p class="news-article-three-date">7TH MARCH 2021</p>
-          <p class="news-article-three-description">Death By Denim are a local rock/pop band based in Perth and have just released a single. </p>
-          <a class="read-more-button news-article-two-button">READ MORE <i class="fas fa-angle-right arrow"></i> </a>
+<?php $post_id =457;
+$queried_post = get_post($post_id);?>
+<?php echo get_the_post_thumbnail($queried_post, 'full', array('class' => 'img-responsive news-image-two')); ?>
+              </div>
+              <div class="col-sm-6">    
+<h2 class="news-article-two-title"><?php echo $queried_post->post_title; ?></h2>
+              <p><?php echo $queried_post->post_content; ?></p>
+<?php echo '<a class="read-more-button news-article-two-button" href="'.get_permalink($queried_post).'">READ MORE <i class="fas fa-angle-right arrow wow animate__animated animate__fadeInRight"></i> </a>';?>  
               </div>    
       </div>
                
               <div class="text-center">
-                  <a class="read-more-button page-numbers"> <i class="fas fa-angle-left"></i> Previous</a>
-                  <a class="read-more-button page-numbers"> 1</a>
-                  <a class="read-more-button page-numbers"> 2</a>
-                  <a class="read-more-button page-numbers"> 3</a>
-                  <a class="read-more-button page-numbers"> Next <i class="fas fa-angle-right arrow"></i> </a>
+                  <a href="<?php the_field('pagenumberbuttonone'); ?>" class="read-more-button page-numbers"> <i class="fas fa-angle-left"></i> Previous</a>
+                  <a href="<?php the_field('pagenumberbuttontwo'); ?>" class="read-more-button page-numbers"> 1</a>
+                  <a href="<?php the_field('pagenumberbuttonthree'); ?>" class="read-more-button page-numbers"> 2</a>
+                  <a href="<?php the_field('pagenumberbuttonfour'); ?>" class="read-more-button page-numbers"> 3</a>
+                  <a href="<?php the_field('pagenumberbuttonfive'); ?>" class="read-more-button page-numbers"> Next <i class="fas fa-angle-right arrow"></i> </a>
               </div>
                                </div>
       </div>
-          <div class="container fluid email-rectangle-mobile">
+          <div class="container-fluid email-rectangle-mobile"<?php if ( get_field(' emailrectangle ') ) { echo 'style="background: url(' . get_field(' emailrectangle ') . ')"'; } ?>>
               <div class="container">
-              <div class="email-signup-grid">
-              <img src="images/http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/email-rectangle.jpg" class="img-responsive email-rectangle" alt="email signup">
-                  <p class="email-signup-text">Want to hear the latest news stories first? <br> Enter your email to receive our newsletter!</p>
+                  <p class="email-signup-text"><?php the_field('emailsignuptextnews'); ?><br><?php the_field('emailsignuptextnewslinetwo'); ?></p>
                    <form class="email-signup-form">
       <input class="email-input" placeholder="Type your email..." type="text" name="email">
         </form>
-                  <a class="btn btn-default btn-lg email-button-submit"> SUBMIT</a>
+                  <a href="<?php the_field('emailsignupbutton'); ?>" class="btn btn-default btn-lg email-button-submit wow animate__animated animate__fadeIn"> SUBMIT</a>
               </div>
 </div>
-              </div>
       </section>
-<?php endwhile; ?>
-	
-	<?php else: ?>
-	<div class="post">
-		<p>Sorry, no posts found.</p>
-	</div><!--post-->
-	<?php endif; ?>
-	</article><!---->
-</section>
-           
-     </div>
-    </div>
-  </div>
 <?php get_footer(); ?>
