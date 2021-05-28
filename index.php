@@ -14,14 +14,14 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active">
-        <li class="nav-list"><a href="index.html">HOME</a></li>
+        <li class="nav-list"><a href="index.php">HOME</a></li>
         <li class="nav-list"><a href="#">ABOUT</a></li> 
-        <li class="nav-list"><a href="news.html">NEWS</a></li> 
+        <li class="nav-list"><a href="news.php">NEWS</a></li> 
         <li class="nav-list dropdown">
            <button class="dropdown-toggle" data-toggle="dropdown" disabled> WHATS ON
               </button>
           <ul class="dropdown-menu">
-              <li class="dropdown-list"> <a href="events.html">EVENTS</a></li>
+              <li class="dropdown-list"> <a href="events.php">EVENTS</a></li>
               <li class="dropdown-list"> <a href="">MARKETS</a></li>
           </ul>
               </li>
@@ -35,7 +35,7 @@
               <div class="tag-grid">
           <img class="yellow-circle img-responsive" src="http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/yellow-circle.png" width="750" alt="yellow circle">
                <h1 class="tag text-center">HOME OF FREMANTLE'S BEST MUSIC EVENTS </h1>
-                <a href="events.html" class="btn btn-default btn-lg explore-music-events-button">EXPLORE MUSIC EVENTS</a>
+                <a href="events.php" class="btn btn-default btn-lg explore-music-events-button">EXPLORE MUSIC EVENTS</a>
               </div>
             </div>
       </section>
@@ -49,7 +49,7 @@
                   <h1 class="featured-news-and-events-title">FEATURED NEWS AND EVENTS</h1>
             </div>
              <div class="col-sm-4">
-        <a href="news.html" class="see-all-button">SEE ALL <span class="fas fa-angle-right"></span> </a>
+        <a href="news.php" class="see-all-button">SEE ALL <span class="fas fa-angle-right"></span> </a>
         </div>
         </div>
     <div class="row">
