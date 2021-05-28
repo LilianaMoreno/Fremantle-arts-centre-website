@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="https://use.typekit.net/qar4lrs.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,14 +104,15 @@
   </div>
 </nav>
           </div>
-          <h1 class="whats-on-events">EVENTS</h1>
+          <h1 class="whats-on-events animate__animated animate__fadeIn">EVENTS</h1>
             </section>
       
       
 <!--SECTION 2-->
               <div class="container-fluid events-image">
-                  <div class="container">
-                        <p class="filters-caption"> FIND YOUR PERFECT MUSIC EVENT</p>
+                  <div class="container events-grid">
+                      <img src="images/events-yellow-rectangle.png" class="img-responsive events-yellow-rectangle">
+                        <p class="filters-caption wow animate__animated animate__fadeInUp"> FIND YOUR PERFECT MUSIC EVENT</p>
                   </div>
       </div>
       
@@ -161,7 +164,7 @@
                  <div class="events-black-rectangle">
                  <h2 class="artist-name"> San Cisco Charity Event</h2>
                   <p class="event-details"> FRI 1ST JULY 2021 | South Lawn <br> 6:00pm - 10:00pm</p>
-                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow"></i> </a>
+                                  <a class="read-more-button find-out-more-button">FIND OUT MORE <i class="fas fa-angle-right arrow wow"></i> </a>
                   <a class="read-more-button buy-tickets-button">BUY TICKETS <i class="fas fa-angle-right arrow"></i> </a>
                   </div>
               </div>
@@ -190,7 +193,7 @@
                    <form class="email-signup-form">
       <input class="email-input" placeholder="Type your email..." type="text" name="email">
         </form>
-                  <a class="btn btn-default btn-lg email-button-submit"> SUBMIT</a>
+                  <a class="btn btn-default btn-lg email-button-submit wow animate__animated animate__fadeIn"> SUBMIT</a>
               </div>
                  </div> 
       </section>
@@ -236,14 +239,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-      
-    <script>  $(document).ready(function() {
-  $('select').change(function() {
-    $(this).prev('span').text(
-      $(this).find(':selected').html()
-    );
-  });
-});</script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script type="text/javascript">
+      new WOW(). init();
+      </script>
       
   </body>
     
