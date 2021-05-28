@@ -47,13 +47,13 @@
           <div class="container">
           <div class="row">
               <div class="col-xs-6">
-                  <a href="index.html" class="img-responsive fac-logo"> 
-        <img src="images/FAC%20logo.png" Alt="Fremantle Art's Centre Logo" width="350" class="img-responsive">        
+                  <a href="index.php" class="img-responsive fac-logo"> 
+        <img src="http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/fac-logo.png" Alt="Fremantle Art's Centre Logo" width="350" class="img-responsive">        
         </a>
               </div>
-  <div class="col-xs-2">
+  <div class="col-xs-1">
               </div>
-<div class="col-xs-4">
+<div class="col-xs-5">
     <form class="search-bar-header">
       <label> <span class="a-labels">search </span> <input class="search-bar-input" name="Search" id="search"> 
       <button class="search-bar-button" type="submit"><span class="fa fa-search"></span></button>
@@ -61,8 +61,8 @@
         </form>
            </div>
               <div class="col-xs-6"></div>
-              <div class="col-xs-2"></div>
-              <div class="col-xs-4">
+              <div class="col-xs-1"></div>
+              <div class="col-xs-5">
                   <a class="login">LOGIN</a> <p class="line"> | </p> <a class="sign-up"> SIGN UP</a>
               </div>
                </div>
@@ -78,20 +78,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav collapsed-navbar-size">
-        <li class="active">
-        <li class="nav-list"><a href="index.html">HOME</a></li>
-        <li class="nav-list"><a href="#">ABOUT</a></li> 
-        <li class="nav-list"><a href="news.html">NEWS</a></li> 
-        <li class="nav-list dropdown">
-           <button class="dropdown-toggle dropdown-menu-collapsed" data-toggle="dropdown" disabled> WHATS ON
-              </button>
-          <ul class="dropdown-menu">
-              <li class="dropdown-list"> <a href="events.html">EVENTS</a></li>
-              <li class="dropdown-list"> <a href="">MARKETS</a></li>
-          </ul>
-              </li>
-        <li class="nav-list"><a href="#">GALLERY</a></li>
-           <li class="nav-list"><a href="#">LOGIN/SIGNUP</a></li>
+<?php wp_nav_menu(array(
+        'menu' => 'Mobile Nav',
+        'items_wrap'=>'%3$s',
+        'container' => false,
+        'list_item_class' => "nav-item",
+        'link_class' => "nav-link",
+        )); ?>
       </ul>
     </div>
   </div>
