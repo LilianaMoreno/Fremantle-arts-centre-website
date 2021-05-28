@@ -30,7 +30,7 @@ Template Name: Whats On - Events
   </div>
 </nav>
           </div>
-          <h1 class="whats-on-events"><?php the_field('eventspagetitle'); ?></h1>
+          <h1 class="whats-on-events animate__animated animate__fadeIn"><?php the_field('eventspagetitle'); ?></h1>
             </section>
       
       
@@ -40,7 +40,7 @@ Template Name: Whats On - Events
               background-size:cover"'; } ?>>
                   <div class="container events-grid">
             <img class="events-yellow-rectangle img-responsive" src="<?php the_field('yellowrectangle'); ?>">
-                        <p class="filters-caption"><?php the_field('filterscaption'); ?></p>
+                        <p class="filters-caption  wow animate__animated animate__fadeInUp"><?php the_field('filterscaption'); ?></p>
                   </div>
       </div>
       
@@ -120,7 +120,7 @@ Template Name: Whats On - Events
                    <form class="email-signup-form">
       <input class="email-input" placeholder="Type your email..." type="text" name="email">
         </form>
-                  <a href="<?php the_field('emailsignupbutton'); ?>" class="btn btn-default btn-lg email-button-submit"> SUBMIT</a>
+                  <a href="<?php the_field('emailsignupbutton'); ?>" class="btn btn-default btn-lg email-button-submit wow animate__animated animate__fadeIn"> SUBMIT</a>
               </div>
                  </div>
       </section>
