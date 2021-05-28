@@ -20,6 +20,7 @@
                       <a class="social-media-icons" href="https://www.instagram.com/fremantleartscentre/"> <span class="a-labels"> instagram</span> <span class="fab fa-instagram instagram-mobile"></span> </a>  
                      <a class="social-media-icons" href="https://www.facebook.com/fremantleartscentre"> <span class="a-labels"> facebook</span> <span class="fab fa-facebook-square facebook-mobile"></span> </a>   
                           <a class="social-media-icons" href="https://twitter.com/FreoArtsCentre"> <span class="a-labels"> twitter</span> <span class="fab fa-twitter twitter-mobile"></span> </a>
+                  <p><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('copyright_mobile') ) : endif; ?></p>
                             </div>
                   </div>
               </div>
