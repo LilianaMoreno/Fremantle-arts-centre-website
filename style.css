@@ -8,9 +8,6 @@ Version: 1
 */ 
 
 
-
-
-
 .btn-default:hover { background-color: #1F7472;
 border-color: #1F7472;
 color:white;}
@@ -105,33 +102,8 @@ padding-top:25px;}
 .nav-list {padding-left:10px;
 padding-right:10px;}
 
-.dropdown:hover .dropdown-menu {display: block;}
-
-.dropdown {padding-top:13px;
-padding-left:20px;
-padding-right:15px;}
-
-.dropdown-toggle {background-color:white;
-border: none;
-    color:black;}
-
 ul.nav.navbar-nav {width:700px;
 padding-left:70px;}
-
-.dropdown-menu { background-color:white;
-    color:black;
-border:none;
-font-size:1em;}
-
-.dropdown-menu>li>a {padding-top:10px;
-padding-bottom:10px;}
-
-.dropdown-menu>li>a:hover{color:#52C6D8;
-background-color:black;}
-
-ul.dropdown-menu {padding-top:0px;
-padding-bottom:0px;}
-
 
 /*FOOTER*/
 .footer {background: url(images/footer-image.jpg);
@@ -319,124 +291,25 @@ text-align:center;
     color:white;
     padding-top:3%;}
 
-.events-image {background:url(images/events-image.jpg);
+.events-image {background:url(images/events-image.png);
 background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
 padding-left:0px;
-padding-right:0px;
-padding-bottom:7%;}
+padding-right:0px;}
 
-.filters-grid {display:grid;
-     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);}
-
-.yellow-rectangle {grid-column: 1/ span 9;
-grid-row: 2/ span 1;
-filter: drop-shadow(1px 1px 7px #666666);
-opacity: 95%;
-margin-top:20%;}
-
-.filters-title {grid-column: 2/ span 8;
-grid-row: 2/ span 1;
-z-index:1;
-font-size:1.5em;
-margin-top:30%;
-font-weight:bold;
-color:black;}
+.events-grid {display:grid;
+     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);}
 
 .filters-caption { font-family: brevia, sans-serif;
 font-weight: 800;
 text-align:center;
-     color:white;
-    font-size: 1.75em;
-    grid-column: 1/ span 8;
-grid-row: 2/ span 1;
-    margin-top:10%;}
-
-.date-filter { grid-column: 2/ span 8;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:40%;
-color:black;
-font-size:0.875em;
-font-weight:bold;}
-
-.date-form {grid-column: 2/ span 10;
-grid-row: 2/ span 3;
-z-index:99;
-margin-top:45%;
-margin-left:-1%;}
-
-.date-form-styling {border:0px;
-border-radius: 5px;
-padding-top:10px;
-padding-bottom:10px;
-padding-left:5px;
-padding-right:10%;
-font-size:0.875em;
-color:#5DCDDE;}
-
-.price-filter {grid-column: 5/ span 4;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:70%;
-margin-left:5%;
-color:black;
-font-size:0.875em;
-font-weight:bold;}
-
-.price-form-styling {border:0px;
-border-radius: 5px;
-padding-top:10px;
-padding-bottom:10px;
-padding-left:5px;
-padding-right:35%;
-font-size:0.875em;
-color:#5DCDDE;}
-
-.price-form {grid-column: 5/ span 4;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:79%;
-margin-left:3%;}
-
-.genre-filter {grid-column: 2/ span 8;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:60%;
-color:black;
-font-size:0.875em;
-font-weight:bold;}
-
-.genre-form {grid-column: 2/ span 8;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:65%;
-margin-left:-1%;}
-
-.genre-form-styling {border:0px;
-border-radius: 5px;
-padding-top:10px;
-padding-bottom:10px;
-padding-left:5px;
-padding-right:19%;
-font-size:0.875em;
-color:#5DCDDE;}
-
-.filters-button {grid-column: 5/ span 3;
-grid-row: 3/ span 1;
-    z-index:99;
-    margin-top:-52%;
-    margin-left:10%;
-    height:40px;
-    width:140px;}
-
-    .date-form-styling:focus-visible {outline: none;}
-
-.price-form-styling:focus-visible {outline: none;}
-
-.genre-form-styling:focus-visible {outline: none;}
+     color:black;
+    font-size: 2.5em;
+   margin-top:62%;
+    padding-bottom:10%;
+z-index: 1;}
 
 /*SECTION 2*/
 .music-events-title {font-family: brevia, sans-serif;
@@ -494,21 +367,16 @@ grid-row: 1/ span 1;}
 background-size:cover;
     background-repeat:no-repeat;}
 
-.email-signup-grid {display:grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(1, 1fr);}
-
-.email-signup-text {grid-column: 1/ span 5;
-grid-row: 1/ span 1;
-margin-top:11%;
-padding-left:5%;
-text-align:right;
+.email-signup-text {
+    padding-top:3%;
+text-align:center;
 color:black;}
 
-.email-signup-form {grid-column: 6/ span 3;
-grid-row: 1/ span 1;
-padding-left:10%;
-margin-top:20%;}
+.email-signup-form {
+padding-top:1%;
+     text-align:center;
+    margin-bottom:2%;
+}
 
 .email-input {border:0px;
 border-radius: 10px;
@@ -517,14 +385,23 @@ padding-bottom:2%;
 padding-right:27%;
     padding-left:5%;}
 
+.email-rectangle-mobile {background: url(images/email-rectangle-mobile.png);
+background-size:cover;
+    background-repeat:no-repeat;
+    margin-top:5%;
+        padding-bottom:2%;
+    margin-bottom:5%;}
+
 ::placeholder {color:#9B9B9B;}
 
 input.email-input:focus-visible {outline:none;}
 
-.email-button-submit {grid-column: 9/ span 1;
-grid-row: 1/ span 1;
+.email-button-submit {
 height: 45px;
-margin-top:55%;}
+    width:100px;
+   margin:auto;
+        display:flex;
+        justify-content: center;}
 
 .social-media-icons {color:white;}
 
@@ -637,7 +514,6 @@ a.footer-body.social-media:hover {color:#5DCDDE;}
 padding-left:2%;}
 
 
-
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1199px) {
  .hero-image {margin-bottom:-6%;}
@@ -671,12 +547,7 @@ padding-left:2%;}
     
     .news-article-one-button {padding-top:55%;}
     
-    .email-button-submit {height: 35px;
-        margin-left:20%;}
-    
-    .filters-button {margin-left:20%;
-    height:35px;
-    width:100px;}
+    .email-button-submit {height: 35px;}
 }
 
 
@@ -745,44 +616,8 @@ padding-left:2%;}
     
     .news-article-three-section {margin-bottom:5%;}
     
-    .email-signup-text {font-size: 0.6875em;
-    margin-top:12%;}
-    
     ::placeholder {font-size:0.875em;}
-    
-     .email-button-submit {height: 30px;
-        margin-left:70%;
-    padding-right: 55px;
-    margin-top:35%;}
-    
-    .filters-title {font-size:1.125em;}
 
-.filters-caption { font-size: 1.125em;}
-
-.date-filter { font-size:0.6875em;}
-
-.date-form {margin-top:45%;}
-
-.date-form-styling {font-size:0.6875em;}
-
-.price-filter {font-size:0.6875em;}
-
-.price-form-styling {padding-right:40%;
-font-size:0.6875em;}
-
-.price-form {margin-top:78.5%;}
-
-.genre-filter {
-font-size:0.6875em;}
-
-.genre-form {grid-column: 2/ span 8;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:65%;
-margin-left:-1%;}
-
-.genre-form-styling {padding-right:22%;
-font-size:0.6875em;} 
     
     .yellow-rectangle-news-page {grid-column: 2/ span 6;}
 }
@@ -817,13 +652,6 @@ font-size:0.6875em;}
      ul.nav.navbar-nav.collapsed-navbar-size {
          padding-left:320px;
          text-align: left;}
-    
-    button.dropdown-toggle.dropdown-menu-collapsed {
-background-color:black;
-    color:white;}
-    
-    li.nav-list.dropdown {padding-top:5px;
-    padding-bottom:5px;}
         
     .navbar-inverse .navbar-nav>li>a {color:white;}
     
@@ -978,18 +806,6 @@ p.about-body { text-align: center;
     
     .page-numbers {display:inline;}
     
-    .email-rectangle-mobile {background: url(images/email-rectangle-mobile.png);
-background-size:cover;
-    background-repeat:no-repeat;
-    margin-top:5%;
-        padding-bottom:5%;
-    margin-bottom:5%;}
-    
-    .email-rectangle {display:none;}
-    
-    div.email-signup-grid {display:inline-block;
-    width:100%;}
-    
     .email-signup-text {padding-left:0px;
     text-align:center;
     margin-top:5%;}
@@ -1010,54 +826,7 @@ background-size:cover;
         padding-top:10%;
         margin-top:0px;}
     
-    .filters-title {text-align: center;
-        grid-column: 1/ span 8;
-        margin-left:-5%;
-font-size:1.5em;
-margin-top:27%;}
-
 .filters-caption {font-size: 1.75em;}
-
-.date-filter {
-font-size:1em;}
-
-.date-form {grid-column: 2/ span 10;
-grid-row: 2/ span 3;
-z-index:99;
-margin-top:45%;
-margin-left:-1%;}
-
-.date-form-styling {
-padding-right:15%;
-font-size:1em;}
-
-.price-filter {font-size:1em;}
-
-.price-form-styling {padding-top:11px;
-padding-right:42%;
-font-size:1em;}
-
-.price-form {grid-column: 5/ span 4;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:79%;
-margin-left:3%;}
-
-.genre-filter {font-size:1em;}
-
-.genre-form {grid-column: 2/ span 8;
-grid-row: 2/ span 1;
-z-index:99;
-margin-top:65%;
-margin-left:-1%;}
-
-.genre-form-styling {padding-right:23%;
-font-size:1em;}
-
-.filters-button {margin-top:-49%;
-    margin-left:35%;
-    height:35px;
-    width:80px;}
     
     .event-details {padding-top:0px;
     padding-bottom:3%;}
@@ -1123,28 +892,7 @@ flex:none;
     
     .news-article-three-description {font-size:0.6875em;}
     
-    .filters-title {
-font-size:1.125em;}
-    
     .filters-caption {font-size: 1.5em}
-    
-.date-form-styling {
-padding-right:10%;}
-
-.price-form-styling {padding-top:11px;
-padding-right:40%;
-font-size:1em;}
-    
-    .price-filter {margin-top:69%;}
-
-.price-form {margin-top:78%;}
-
-.genre-form-styling {padding-right:22%;}
-
-.filters-button {height:30px;}
-    
-    .music-events-title {font-size:1.875em;
-    padding-top:1%;}
     
       .buy-tickets-button {display:block;
     flex:none;
@@ -1234,39 +982,12 @@ font-size:1em;}
         
     .whats-on-events {font-size:1.5em;}
     
-        .filters-title {font-size:1em;}
-    
     .filters-caption {font-size: 1em;}
-    
-    .date-filter {font-size:0.6875em;}
-    
-    .price-filter {font-size:0.6875em;
-    margin-left:15%;}
-    
-    .genre-filter {font-size:0.6875em;}
-    
-.date-form-styling {
-padding-right:0%;
-    font-size:0.6875em;
-    padding-right:8%;}
-
-.price-form-styling {padding-right:0%;
-    font-size:0.6875em;
-    padding-right:27%;
-    margin-left:10%;}
-
-.genre-form-styling {padding-right:0%;
-    font-size:0.6875em;
-    padding-right:20%;}
-
-.filters-button {height:30px;
-    width:70px;
-    margin-left:25%;}
-    
-    .music-events-title {font-size:1.5em;}
     
       .buy-tickets-button {
     margin-top:-5%;}
+    
+    .email-button-submit {font-size:0.75em;}
 }
 
 @media only screen and (max-width: 380px) {
@@ -1335,9 +1056,6 @@ padding-right:0%;
     margin-top:3%;}
     
     .news-article-two-description {padding-right:15%;}
-
-.music-events-title {font-size:1em;
-    padding-top:2%;}
     
     .artist-name {font-size:1em;}
     
