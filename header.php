@@ -36,6 +36,8 @@
 <link rel="stylesheet" href="https://use.typekit.net/qar4lrs.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
       
 <?php wp_head(); ?> <!—very important that this is added-->
   </head>
@@ -48,13 +50,13 @@
           <div class="row">
               <div class="col-xs-6">
                   <a href="index.php" class="img-responsive fac-logo"> 
-        <img src="http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/fac-logo.png" Alt="Fremantle Art's Centre Logo" width="350" class="img-responsive">        
+        <img src="http://206.189.45.97/~mesh18/wp-content/themes/fremantle_arts_centre_website/images/fac-logo.png" Alt="Fremantle Art's Centre Logo" width="350" class="img-responsive animate__animated animate__fadeIn">        
         </a>
               </div>
   <div class="col-xs-1">
               </div>
 <div class="col-xs-5">
-    <form class="search-bar-header">
+    <form class="search-bar-header animate__animated animate__fadeIn">
       <label> <span class="a-labels">search </span> <input class="search-bar-input" name="Search" id="search"> 
       <button class="search-bar-button" type="submit"><span class="fa fa-search"></span></button>
           </label> 
@@ -62,7 +64,7 @@
            </div>
               <div class="col-xs-6"></div>
               <div class="col-xs-1"></div>
-              <div class="col-xs-5">
+              <div class="col-xs-5 animate__animated animate__fadeIn">
                   <a class="login">LOGIN</a> <p class="line"> | </p> <a class="sign-up"> SIGN UP</a>
               </div>
                </div>
