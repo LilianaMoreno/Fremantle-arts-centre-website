@@ -78,6 +78,18 @@ add_theme_support( 'post-thumbnails');
 ?>
 
 <?php
+	if ( get_field('aboutbackgroundimage') ) {
+		echo 'style="background: url(' . get_field(' aboutbackgroundimage') . ')"';
+	}
+?>
+
+<?php
+	if ( get_field('marketsbackgroundimage') ) {
+		echo 'style="background: url(' . get_field(' marketsbackgroundimage') . ')"';
+	}
+?>
+
+<?php
 function add_menu_link_class( $atts, $item, $args ) {
 if($args->link_class) {$atts['class'] = $args->link_class;
 }
