@@ -40,7 +40,7 @@
       </section>
       
 <!--      SECTION 2 - ARTICLES-->
-<section class="container-fluid articles-background-homepage"<?php if ( get_field(' headerbackgroundimage ') ) { echo 'style="background: url(' . get_field(' headerbackgroundimage ') . ')"'; } ?>>
+<section class="container-fluid articles-background-homepage"<?php if ( get_field(' articlesbackgroundimage ') ) { echo 'style="background: url(' . get_field(' articlesbackgroundimage ') . ')"'; } ?>>
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
@@ -76,7 +76,7 @@
 
       
 <!--      SECTION 3 - MARKETS-->
-      <section class="container-fluid markets-background markets-black-background-mobile">
+      <section class="container-fluid markets-background markets-black-background-mobile"<?php if ( get_field(' marketsbackgroundimage ') ) { echo 'style="background: url(' . get_field(' marketsbackgroundimage ') . ')"'; } ?>>
           <div class="container markets-black-background">
               <div class="row">
                   <div class="col-sm-6">
@@ -94,7 +94,7 @@
 
       
 <!--      SECTION 4 - ABOUT-->
-       <section class="container-fluid about-section">
+       <section class="container-fluid about-section"<?php if ( get_field(' aboutbackgroundimage ') ) { echo 'style="background: url(' . get_field(' aboutbackgroundimage ') . ')"'; } ?>>
           <div class="container">
               <div class="row">
                   <div class="col-sm-6">
